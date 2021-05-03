@@ -1,4 +1,4 @@
-# router-udemy-1
+# router-vuejs-example
 
 ## Project setup
 ```
