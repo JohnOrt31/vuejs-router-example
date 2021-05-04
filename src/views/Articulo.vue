@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <Titulo texto="INICIO"/>
-  </div>
+  <Titulo texto="Ruta con parámetros"/>
+  <h2>Parámetro: {{ $route.params.id }}</h2>
 </template>
 
 <script>
+
 import Titulo from '../components/Titulo'
 
 export default {
-  name: 'Home',
   components: {
     Titulo
   }
-
 }
+
 </script>
+
+<style>
+
+</style>
