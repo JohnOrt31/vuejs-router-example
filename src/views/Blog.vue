@@ -1,8 +1,10 @@
 <template>
     <Titulo texto="Aquí va un titulo generico"/>
-    <button @click="consumirAPI">Consumir la API</button>
     <div v-for="item in arrayBlog" :key="item.id">
-        {{ item.title }}
+        <router-link :to="`/blog/${item.id}`">
+            {{ item.title }}
+        </router-link>
+        
     </div>
 </template>
 
@@ -30,6 +32,9 @@ export default {
             }
         }   
     },
+    created() {
+        this.consumirAPI();
+    }
 
 }
 </script>
